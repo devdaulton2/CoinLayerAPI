@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="container">
+  <nav class="navbar fixed-top navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/free-cryptocurrency-coin-icon-2457-thumb.png" alt="" width="100" class="d-inline-block align-text-top">Crypto Convertor
+      </a>
+    </div>
+  </nav>
+</div>
+
+<div class="container" id="mainCard">
+  <div class="row justify-content-center">
+    <div class="card bg-transparent border-transparent mb-3"  style="max-width: 1000px;">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Start Buying</h5>
+            <h5 class="card-subtitle">Crypto Today</h5>
+            <p class="card-text">With today's technology you can start watching, buying, selling, and trading cryptocurrencies from an app on your phone. The possibilities are endless! See how your favorite currencies compare here.</p>
+          </div>
+        </div>
+        <div class="convertor col-md-6">
+          <label for="exampleDataList" class="convertFrom form-label">Crypto Comparisons</label>
+          <div class="col-3">
+          <input type="email" class="amount form-control" id="amountToConvert" placeholder="0">
+          <input class="convertFrom form-control" list="datalistOptions" id="dataList" placeholder="Convert From...">
+          <datalist id="datalistOptions">
+            <option value="cryto">
+            <option value="New York">
+            <option value="Seattle">
+            <option value="Los Angeles">
+            <option value="Chicago">
+          </datalist>
+          </col>
+          <img src="assets/convert-arrows-removebg-preview.png" width="50px">
+          <input type="email" class="convertedAmt form-control" id="amountConverted" placeholder="0">
+          <input class="convertTo form-control" list="datalistOptions" id="exampleDataList" placeholder="Convert To...">
+          <datalist id="datalistOptions">
+            <option value="San Francisco">
+            <option value="New York">
+            <option value="Seattle">
+            <option value="Los Angeles">
+            <option value="Chicago">
+          </datalist>
+        </div>
+        </div>
+        <div class="card-footer bg-transparent">linked images to coinbase, cashapp</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <div class="signContainer fixed-bottom">
+  
+    <div class="circle circle_blink">
+    </div>
+    
+    <div class="liveSignContainer" position-fixed>
+      <div class="liveSign text-glow ">
+          <div class="text-glow"> 
+            LIVE
+        </div> 
+      </div>
+    </div>
+  </div>
+  
+    <div class="container">
+        <div class="row">
+          <div class="ticker-wrap">
+            <div class="ticker">
+              <div class="ticker__item">
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
