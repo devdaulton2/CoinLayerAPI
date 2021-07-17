@@ -1,24 +1,66 @@
+/* Issues:
+        - ticker background 
+        - links to places to buy
+        - link other html pages instead of all on one
+        - font?
+        */
+
 body {
-    background-color: #22277A;
+    background-color: white;
     /* #430b91; */
-    font-family: 'Teko', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#moneyBag {
+  margin-top: 390px;
+  margin-left: 15px;
+  z-index: -100;
 }
 
 .navbar {
-  background-color: #22275A;
+  background-color: #ff7f27;
+}
+
+.navbar-brand {
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  font-size: 52pt;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 #mainCard {
-  margin-top: 250px;
+  margin-top: -600px;
+  /* background-color: #22275A; */
+  z-index: -200;
+  padding-top: 15px;
 }
 .card-body {
   padding-top: 20px;
 }
 
+.card {
+  background-color: #22275A;
+  padding-bottom: 15px;
+}
+
 .convertor {
-  padding-top: 20px;
+  padding-top: -10px;
   color: white;
-  font-size: 14pt;
+  font-size: 14pt;  
+  margin-top: 0px;
+}
+
+label {
+  padding-bottom: 20px;
+  padding-left: 28px;
+  font-size: 18pt;
+  align-items: center;
+}
+
+.arrows {
+  margin-left: 85px;
 }
 
 .card-title {
@@ -68,19 +110,18 @@ body {
 }
 
 .ticker-wrap {
-  
   position: fixed;
   bottom: 0;
   width: 100%;
   overflow: hidden;
   height: 4rem;
-  background-color: rgba(rgb(30, 64, 136), 0.9); 
+  background-color: rgba(rgb(73, 78, 88), 0.9); 
   padding-left: 100%;
   left: 150px;
   box-sizing: content-box;
 }
   .ticker {
-
+    background-color: rgba(rgb(73, 78, 88), 0.9); 
     display: inline-block;
     height: 4rem;
     line-height: 4rem;  
@@ -101,8 +142,9 @@ body {
 .ticker__item {
       display: inline-block;
       font-size: 2rem;
+      font-weight: ;
       color: white;   
-
+      background-color: rgba(rgb(73, 78, 88), 0.9); 
     }
 
     /* live button */
@@ -168,3 +210,12 @@ body {
        -moz-transition: width 0.3s; /* Firefox 4 */
        -o-transition: width 0.3s; /* Opera */
        }
+
+   
+.ticker-box {
+  width: 100vw;
+  height: 80px;
+  background-color: #3e3e47 !important;
+  z-index: -50;
+}
+
