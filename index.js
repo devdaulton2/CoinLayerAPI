@@ -1,7 +1,6 @@
 tickerURL = ('http://api.coinlayer.com/api/live');
 conversionURL = ('http://api.coinlayer.com/convert');
-// apiKey = ('0edd7fb6ba7a937a5e64a90ed942e65e');
-// apiKey = ('APIKEY')
+apiKey = ('0edd7fb6ba7a937a5e64a90ed942e65e');
 
 const stonkRate = document.querySelector('.ticker__item')
 const startType = document.getElementsByClassName('convertFrom');
